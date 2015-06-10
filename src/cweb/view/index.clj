@@ -3,5 +3,6 @@
 
 (defn index []
   (html
-    [:head [:link {:rel "stylesheet" :type "text/css" :href "/css/topcoat-mobile-dark.min.css"}]]
-    [:body [:div.topcoat-button-bar__item [:button.topcoat-button-bar__button "One"]]]))
+    [:head [:link {:rel "stylesheet" :type "text/css" :href "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css"}]
+           [:script {:src "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"}]]
+    [:body [:a.waves-effect.waves-light.btn "Test"]]))
