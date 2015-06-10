@@ -16,5 +16,12 @@
              [:li [:a.grey-text.text-lighten-3 {:href "#!"} "Link 4"]]]]]]
          [:div.footer-copyright [:div.container "&copy; 2015 Copyright Text" [:a.grey-text.text-lighten-4.right {:href "#!"} "More Links"]]]]))
 
-(defn layout [page]
-  (str page (footer)))
+(defn- header []
+  (html [:head [:link {:rel "stylesheet" :type "text/css" :href "/css/materialize.min.css"}]
+         [:script {:src "/js/materialize.min.js"}]]))
+
+(defn- body [& cont]
+  (apply #(html [:body %]) cont))
+
+(defn layout [& cont]
+  (str (header) (body cont) (footer)))
