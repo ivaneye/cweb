@@ -8,4 +8,4 @@
 
 (defroutes index-route
            (GET "/" [] (index))
-           (route/not-found "<h1>Page not found</h1>"))
+           (route/not-found (view/not-found)))

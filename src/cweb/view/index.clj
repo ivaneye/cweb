@@ -6,3 +6,6 @@
 (defn index []
   (layout (button {:name "ddd" :s "sss"} "YYY")
           (button "ssss")))
+
+(defn not-found []
+  (layout [:h1 "Page not found"]))
