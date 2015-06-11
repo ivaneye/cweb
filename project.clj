@@ -5,6 +5,7 @@
                       :url  "http://www.eclipse.org/legal/epl-v10.html"}
             :dependencies [[org.clojure/clojure "1.6.0"]
                            [ring/ring-defaults "0.1.2"]
-                           [compojure "1.3.4"]]
+                           [compojure "1.3.4"]
+                           [selmer "0.8.2"]]
             :plugins [[lein-ring "0.8.11"]]
             :ring {:handler cweb.core/app})
